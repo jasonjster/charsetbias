@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jasonjster-charsetbias"
+version = "0.1.0"
+description = "解析时间标记，排列提示词的字符集偏差的发生顺序，标出间隔异常与逆序事件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "jasonjster" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://jasonjster.github.io"
+Repository = "https://github.com/jasonjster/charsetbias"
+Issues = "https://github.com/jasonjster/charsetbias/issues"
+
+[project.scripts]
+charsetbias = "charsetbias:main"
+
+[tool.setuptools]
+py-modules = ["charsetbias"]
